@@ -6,12 +6,60 @@ plugins:
     ~server-satori:nt5d03: {}
     ~server-temp:9mki2o: {}
   group:basic:
-    ~admin:p5undt: {}
+    admin:p5undt: {}
     ~bind:tdcbz6: {}
-    commands:3s6lk2: {}
+    commands:3s6lk2:
+      clear:
+        config:
+          permissions:
+            - authority:4
+      inspect:
+        aliases:
+          inspect:
+            filter: false
+        config:
+          permissions:
+            - authority:4
+      status:
+        aliases:
+          status:
+            filter: false
+        config:
+          permissions:
+            - authority:4
+      timer:
+        aliases:
+          timer:
+            filter: false
+        config:
+          permissions:
+            - authority:4
+      usage:
+        aliases:
+          usage:
+            filter: false
+        config:
+          permissions:
+            - authority:4
+      user:
+        aliases:
+          user:
+            filter: false
+      plugin:
+        config:
+          permissions:
+            - authority:4
+      pixluna:
+        name: /pixiv
+        aliases:
+          pixiv: null
+          色图:
+            filter: false
+          pixluna:
+            filter: false
     help:j27lwy: {}
     http:fkalzl: {}
-    ~inspect:87y2k3: {}
+    inspect:87y2k3: {}
     locales:pmahx0: {}
     proxy-agent:ktrzl8: {}
     rate-limit:45u4gx: {}
@@ -85,7 +133,19 @@ plugins:
     $if: env.NODE_ENV === 'development'
     hmr:dozw2y:
       root: .
-  advanced-echo:oxh4yq:
-    template:
-      - '%%message%%'
-      - '%%message%%喵'
+  ba-tarot:41y7q9: {}
+  ~pixluna:lfanbg:
+    excludeAI: true
+    isR18: true
+    imageProcessing:
+      confusion: true
+      compress: true
+    r18P: 0.5
+  emojihub-bili:hp13pv:
+    emojihub_bili_command: emoji
+  cron:v4ky6x: {}
+  canvas:c6y0ku: {}
+  downloads:e72sc3: {}
+  nix:px4k5u: {}
+prefix:
+  - /
