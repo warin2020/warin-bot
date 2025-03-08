@@ -1,0 +1,91 @@
+plugins:
+  group:server:
+    server:iv2cwj:
+      port: 5140
+      host: 0.0.0.0
+    ~server-satori:nt5d03: {}
+    ~server-temp:9mki2o: {}
+  group:basic:
+    ~admin:p5undt: {}
+    ~bind:tdcbz6: {}
+    commands:3s6lk2: {}
+    help:j27lwy: {}
+    http:fkalzl: {}
+    ~inspect:87y2k3: {}
+    locales:pmahx0: {}
+    proxy-agent:ktrzl8: {}
+    rate-limit:45u4gx: {}
+    telemetry:fhofk0: {}
+  group:console:
+    actions:z031er: {}
+    analytics:hoan9x: {}
+    android:izyuks:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    auth:5cxt73:
+      admin:
+        password: ${{ env.ADMIN_PASSWORD }}
+        username: ${{ env.ADMIN_USERNAME }}
+    config:3hx9et: {}
+    console:qlnjbz:
+      open: true
+    dataview:09pqq8: {}
+    desktop:pkgdv1:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:dorj1z: {}
+    logger:0mzirg: {}
+    insight:txodt5: {}
+    market:xw2pg0:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:hjtpfc: {}
+    oobe:c37fq0: {}
+    sandbox:ck3rxx: {}
+    status:gt5s2r: {}
+    theme-vanilla:v9rbqp: {}
+  group:storage:
+    ~database-mongo:tjfljp:
+      database: koishi
+    ~database-mysql:fyyrji:
+      database: koishi
+    ~database-postgres:4f0ckr:
+      database: koishi
+    database-sqlite:8f98jm:
+      path: data/koishi.db
+    assets-local:09mahm: {}
+  group:adapter:
+    ~adapter-dingtalk:sfnqp6: {}
+    ~adapter-discord:s2brfk: {}
+    ~adapter-kook:bezif7: {}
+    ~adapter-lark:gxndxf: {}
+    ~adapter-line:a1e3cb: {}
+    ~adapter-mail:vlale1: {}
+    ~adapter-matrix:kcy97v: {}
+    adapter-qq:xv7pgk:
+      id: ${{ env.QQ_ID }}
+      secret: ${{ env.QQ_SECRET }}
+      token: ${{ env.QQ_TOKEN }}
+      type: private
+      intents:
+        - GUILDS
+        - GUILD_MEMBERS
+        - GUILD_MESSAGE_REACTIONS
+        - DIRECT_MESSAGES
+        - USER_MESSAGE
+        - INTERACTIONS
+        - MESSAGE_AUDIT
+        - PUBLIC_GUILD_MESSAGES
+    ~adapter-satori:29na16: {}
+    ~adapter-slack:9gmqfs: {}
+    ~adapter-telegram:ude0qp: {}
+    ~adapter-wechat-official:q63sje: {}
+    ~adapter-wecom:s8pka6: {}
+    ~adapter-whatsapp:6rfuw9: {}
+    ~adapter-zulip:2u7sli: {}
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:dozw2y:
+      root: .
+  advanced-echo:oxh4yq:
+    template:
+      - '%%message%%'
+      - '%%message%%喵'
