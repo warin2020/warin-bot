@@ -61,7 +61,8 @@ plugins:
     http:fkalzl: {}
     inspect:87y2k3: {}
     locales:pmahx0: {}
-    proxy-agent:ktrzl8: {}
+    proxy-agent:ktrzl8:
+      proxyAgent: http://127.0.0.1:12334
     rate-limit:45u4gx: {}
     telemetry:fhofk0: {}
   group:console:
@@ -124,7 +125,9 @@ plugins:
         - PUBLIC_GUILD_MESSAGES
     ~adapter-satori:29na16: {}
     ~adapter-slack:9gmqfs: {}
-    ~adapter-telegram:ude0qp: {}
+    adapter-telegram:ude0qp:
+      token: ${{ env.TG_TOKEN }}
+      protocol: polling
     ~adapter-wechat-official:q63sje: {}
     ~adapter-wecom:s8pka6: {}
     ~adapter-whatsapp:6rfuw9: {}
