@@ -62,7 +62,7 @@ plugins:
     inspect:87y2k3: {}
     locales:pmahx0: {}
     proxy-agent:ktrzl8:
-      proxyAgent: http://127.0.0.1:12334
+      proxyAgent: ${{ env.PROXY_AGENT }}
     rate-limit:45u4gx: {}
     telemetry:fhofk0: {}
   group:console:
