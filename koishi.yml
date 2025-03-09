@@ -158,5 +158,6 @@ plugins:
   canvas:c6y0ku: {}
   downloads:e72sc3: {}
   nix:px4k5u: {}
+  '@warin2025/api-send:mbo756': {}
 prefix:
   - /
