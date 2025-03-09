@@ -85,7 +85,7 @@ plugins:
     insight:txodt5: {}
     market:xw2pg0:
       search:
-        endpoint: https://registry.koishi.chat/index.json
+        endpoint: https://kp.itzdrli.cc/
     notifier:hjtpfc: {}
     oobe:c37fq0: {}
     sandbox:ck3rxx: {}
