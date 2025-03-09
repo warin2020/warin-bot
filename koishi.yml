@@ -136,14 +136,22 @@ plugins:
     $if: env.NODE_ENV === 'development'
     hmr:dozw2y:
       root: .
-  ba-tarot:41y7q9: {}
-  ~pixluna:lfanbg:
+  ba-tarot:41y7q9:
+    $filter:
+      $eq:
+        - $: platform
+        - qq
+  pixluna:lfanbg:
     excludeAI: true
     isR18: true
     imageProcessing:
       confusion: true
       compress: true
     r18P: 0.5
+    $filter:
+      $eq:
+        - $: platform
+        - telegram
   emojihub-bili:hp13pv:
     emojihub_bili_command: emoji
   cron:v4ky6x: {}
