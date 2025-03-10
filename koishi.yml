@@ -159,5 +159,6 @@ plugins:
   downloads:e72sc3: {}
   nix:px4k5u: {}
   '@warin2025/api-send:mbo756': {}
+  message-logger:5xw87z: {}
 prefix:
   - /

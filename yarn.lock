@@ -5030,6 +5030,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"koishi-plugin-message-logger@npm:2.0.0":
+  version: 2.0.0
+  resolution: "koishi-plugin-message-logger@npm:2.0.0"
+  peerDependencies:
+    koishi: ^4.10.0
+  checksum: 10c0/0760e462270d719e316016c5c24e433485968ecc168d015db808a57df894b1639b9627841bbe45ac8035375ab127e86311823e801b4db30dccb4ea26e9933eab
+  languageName: node
+  linkType: hard
+
 "koishi-plugin-nix@npm:0.0.3":
   version: 0.0.3
   resolution: "koishi-plugin-nix@npm:0.0.3"
@@ -7006,6 +7015,7 @@ __metadata:
     koishi-plugin-downloads: "npm:0.1.3"
     koishi-plugin-emojihub-bili: "npm:1.3.26"
     koishi-plugin-ffmpeg: "npm:1.1.0"
+    koishi-plugin-message-logger: "npm:2.0.0"
     koishi-plugin-nix: "npm:0.0.3"
     koishi-plugin-pixluna: "npm:2.3.8-beta.1"
     koishi-plugin-rate-limit: "npm:^2.0.4"
