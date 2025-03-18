@@ -57,6 +57,12 @@ plugins:
             filter: false
           pixluna:
             filter: false
+      塔罗牌:
+        aliases:
+          tarot: null
+          塔罗牌:
+            filter: false
+        name: /tarot
     help:j27lwy: {}
     http:fkalzl: {}
     inspect:87y2k3: {}
