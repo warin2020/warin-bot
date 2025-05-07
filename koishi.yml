@@ -3,6 +3,7 @@ plugins:
     server:iv2cwj:
       port: 5140
       host: 0.0.0.0
+      selfUrl: http://47.106.20.74
     ~server-satori:nt5d03: {}
     ~server-temp:9mki2o: {}
   group:basic:
@@ -91,7 +92,7 @@ plugins:
     insight:txodt5: {}
     market:xw2pg0:
       search:
-        endpoint: https://kp.itzdrli.cc/
+        endpoint: https://koishi-registry.yumetsuki.moe/index.json
     notifier:hjtpfc: {}
     oobe:c37fq0: {}
     sandbox:ck3rxx: {}
@@ -134,7 +135,12 @@ plugins:
     adapter-telegram:ude0qp:
       token: ${{ env.TG_TOKEN }}
       protocol: polling
-    ~adapter-wechat-official:q63sje: {}
+    adapter-wechat-official:q63sje:
+      account: ${{ env.WX_ACCOUNT }}
+      appid: ${{ env.WX_APPID }}
+      secret: ${{ env.WX_SECRET }}
+      token: ${{ env.WX_TOKEN }}
+      aesKey: ${{ env.WX_AESKEY }}
     ~adapter-wecom:s8pka6: {}
     ~adapter-whatsapp:6rfuw9: {}
     ~adapter-zulip:2u7sli: {}
@@ -160,6 +166,14 @@ plugins:
         - telegram
   emojihub-bili:hp13pv:
     emojihub_bili_command: emoji
+    $filter:
+      $or:
+        - $eq:
+            - $: platform
+            - telegram
+        - $eq:
+            - $: platform
+            - qq
   cron:v4ky6x: {}
   canvas:c6y0ku: {}
   downloads:e72sc3: {}
