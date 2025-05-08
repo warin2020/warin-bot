@@ -2846,6 +2846,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@warin2025/koishi-plugin-pumper-password@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@warin2025/koishi-plugin-pumper-password@npm:1.0.0"
+  peerDependencies:
+    koishi: ^4.18.7
+  checksum: 10c0/282a767fe3974a47c342a221f11967796b37f255e86e1eb5fa2ecaeef7abe6ff0857b88105a853c663af086ffe5fdf92ebe7c3080d3e1621c452bf406a2c0bd5
+  languageName: node
+  linkType: hard
+
 "@wecom/crypto@npm:^1.0.1":
   version: 1.0.1
   resolution: "@wecom/crypto@npm:1.0.1"
@@ -7039,6 +7048,7 @@ __metadata:
     "@types/node": "npm:^22.7.5"
     "@types/react": "npm:^18.2.70"
     "@warin2025/koishi-plugin-api-send": "npm:1.0.1"
+    "@warin2025/koishi-plugin-pumper-password": "npm:^1.0.0"
     cross-env: "npm:^7.0.3"
     esbuild: "npm:^0.23.1"
     esbuild-register: "npm:@shigma/esbuild-register@^1.1.1"

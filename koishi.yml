@@ -180,5 +180,10 @@ plugins:
   nix:px4k5u: {}
   '@warin2025/api-send:mbo756': {}
   message-logger:5xw87z: {}
+  '@warin2025/pumper-password:zgiwrb':
+    $filter:
+      $eq:
+        - $: platform
+        - wechat-official
 prefix:
   - /
